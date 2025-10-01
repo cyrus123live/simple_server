@@ -6,4 +6,4 @@ app = FastAPI()
 async def receive_post(request: Request):
     body = await request.json()
     print(body)
-    return {"status": "received", "data": body}
+    return {"weather": "sunny"}
